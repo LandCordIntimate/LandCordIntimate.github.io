@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Index.css">
+    <title>LandCord Intimate</title>
+    <link rel="icon" href="ventana2.png" type="image/png">
+
+  <meta property="og:title" content="Nombre de tu sitio web" />
+  <meta property="og:description" content="Una breve descripción de tu página." />
+  <meta property="og:image" content="https://tusitio.com/imagen.jpg" />
+  <meta property="og:url" content="https://tusitio.com/" />
+  <meta property="og:type" content="website" />
+
+  </head>
+  <body class="body">
+
+    <header style="position: relative; height: 300px; overflow: hidden;">
+      
+
+    <div class="header-content" style="position: relative; z-index: 2; color: white; padding: 2px;">
+          <img src="LOGO.png" alt="LOGO" class="neon-glow LOGO-img">
+          <br><br>
+          <h1>LANDCORD INTIMATE</h1>
+          <br>
+          <h3 class="subt">SOFT LUXURY</h3>
+        </div>
+    </header>
+
+     
+    <!-- ✅ Este es el lugar correcto para cargar tu JS -->
+
+ <nav class="menus" id="inicio">
+    <a href="index.html" onclick="playSound()">Tienda</a>
+    <a href="#Interiores-disponibles" onclick="playSound()">Interiores disponibles</a>
+    <a href="#carrito" onclick="playSound()">Carrito</a>
+  <div class="dropdown">
+    <a href="#lenceria" onclick="playSound()">Lencería o interiores</a>
+    <div class="dropdown-content">
+      <a href="LenceriaMujer.html" onclick="playSound()">Mujer</a>
+      <a href="InteriorHombres.html" onclick="playSound()">Hombre</a>
+      <a href="InteriorNiña.html" onclick="playSound()">Niña</a>
+      <a href="InteriorNiño.html" onclick="playSound()">Niño</a>
+    </div>
+  </div>
+
+  <a href="#contacto" onclick="playSound()">Contacto</a>
+</nav>
+
+     
+    <!-- Solo necesitas un audio si todos comparten el mismo sonido -->
+    <audio id="Tecla" src="Tecla.mp3"></audio>
+
+    </head>
+<section id="Interiores-disponibles">
+  <div class="contenedor1">
+    <h2>Interiores de hombres disponibles</h2>
+
+    <div class="selector-lenceria">
+      <label for="categoriaLenceria"><strong>Categoría:</strong></label>
+      <select id="categoriaLenceria">
+        <option disabled selected>Selecciona una categoría</option>
+        <option value="boxer">Boxer</option>
+        <option value="medias">Medias</option>
+        <option value="franelas">Franelas</option>
+        <option value="otros">Otros</option>
+        <option value="todos">Mostrar todas</option>
+      </select>
+    </div>
+
+    <div class="Lenc1">
+      <!-- boxer -->
+      <img src="Boxer1.jpg" alt="Boxer1" data-categoria="boxer">
+      <img src="Boxer2.jpg" alt="Boxer2" data-categoria="boxer">
+      <img src="Boxer3.jpg" alt="Boxer3" data-categoria="boxer">
+      <img src="Boxer4.jpg" alt="Boxer4" data-categoria="boxer">
+
+      <!-- medias -->
+      <img src="Medias1.jpg" alt="Medias1" data-categoria="medias">
+      <img src="Medias2.jpg" alt="Medias2" data-categoria="medias">
+      <img src="Medias3.jpg" alt="Medias3" data-categoria="medias">
+      <img src="Medias4.jpg" alt="Medias4" data-categoria="medias">
+
+      <!-- franelas -->
+      <img src="Franela1.png" alt="Franela1" data-categoria="franelas">
+      <img src="Franela2.jpg" alt="Franela2" data-categoria="franelas">
+      <img src="Franela3.jpg" alt="Franela3" data-categoria="franelas">
+      <img src="Franela4.jpg" alt="Franela4" data-categoria="franelas">
+
+      <!-- Otros -->
+      <img src="Correa1.jpg" alt="Correa1" data-categoria="otros">
+      <img src="Correa2.jpg" alt="Correa2" data-categoria="otros">
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const selector = document.getElementById("categoriaLenceria");
+    const imagenes = document.querySelectorAll(".Lenc1 img");
+
+    selector.addEventListener("change", function () {
+      const categoria = this.value;
+
+      imagenes.forEach(img => {
+        const cat = img.getAttribute("data-categoria");
+
+        if (categoria === "todos" || cat === categoria) {
+          img.style.display = "inline-block";
+        } else {
+          img.style.display = "none";
+        }
+      });
+    });
+  });
+</script>
+
+<!-- Carrito -->
+<section id="carrito">
+  <div class="contenedor1">
+    <h2>CARRITO</h2>
+    <div class="carrito" id="carrito-contenedor">
+      <p>Haz clic en una imagen para agregarla aquí.</p>
+    </div>
+    <div class="botones-carrito">
+      <button class="buttonL1" onclick="mostrarFormulario()">Procesar pedidos</button>
+      <button class="buttonL2" onclick="limpiarCarrito()">Limpiar carrito</button>
+    </div>
+  </div>
+</section>
+
+<!-- Formulario emergente -->
+<div id="formulario">
+  <h3>Datos del cliente</h3>
+  <form id="pedidoForm">
+    <input type="text" name="nombre" placeholder="Nombre" required>
+    <input type="text" name="apellido" placeholder="Apellido" required>
+    <input type="email" name="correo" placeholder="Correo" required>
+    <input type="text" name="direccion" placeholder="Dirección" required>
+    <input type="text" name="telefono" placeholder="Teléfono" required>
+    <input type="hidden" name="imagenes">
+    <button type="submit">Enviar pedido</button>
+    <button type="button" onclick="cerrarFormulario()">Cancelar</button>
+  </form>
+</div>
+
+<style>
+  .carrito-item {
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+  }
+
+  .carrito-item img {
+    width: 120px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+
+  .cerrar-img {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #f00;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 14px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    line-height: 18px;
+    text-align: center;
+    padding: 0;
+  }
+</style>
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  emailjs.init("SBuqNR9vKjoZoQUoB"); // Tu Public Key
+
+  function mostrarFormulario() {
+    document.getElementById("formulario").style.display = "block";
+  }
+
+  function cerrarFormulario() {
+    document.getElementById("formulario").style.display = "none";
+  }
+
+  function limpiarCarrito() {
+    const carrito = document.getElementById("carrito-contenedor");
+    carrito.innerHTML = "<p>Haz clic en una imagen para agregarla aquí.</p>";
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const imagenes = document.querySelectorAll(".Lenc1 img");
+    const carrito = document.getElementById("carrito-contenedor");
+    const form = document.getElementById("pedidoForm");
+    const inputImagenes = form.querySelector("input[name='imagenes']");
+
+    imagenes.forEach(img => {
+      img.addEventListener("click", () => {
+        const parrafo = carrito.querySelector("p");
+        if (parrafo) parrafo.remove();
+
+        const wrapper = document.createElement("div");
+        wrapper.classList.add("carrito-item");
+
+        const clon = img.cloneNode();
+        clon.style.width = "120px";
+
+        const cerrarBtn = document.createElement("button");
+        cerrarBtn.className = "cerrar-img";
+        cerrarBtn.innerHTML = "×";
+        cerrarBtn.onclick = () => {
+          wrapper.remove();
+          if (carrito.children.length === 0) {
+            carrito.innerHTML = "<p>Haz clic en una imagen para agregarla aquí.</p>";
+          }
+        };
+
+        wrapper.appendChild(clon);
+        wrapper.appendChild(cerrarBtn);
+        carrito.appendChild(wrapper);
+      });
+    });
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // Añadir las imágenes del carrito al input hidden
+      const imgs = Array.from(carrito.querySelectorAll("img")).map(img => img.src);
+      inputImagenes.value = imgs.join("\n");
+
+      emailjs.sendForm("service_4w02lxj", "template_lj6419o", form)
+        .then(() => {
+          alert("✅ Pedido enviado correctamente.");
+          cerrarFormulario();
+          form.reset();
+          limpiarCarrito();
+        })
+        .catch((error) => {
+          console.error("❌ Error al enviar:", error);
+          alert("❌ Hubo un error al enviar el pedido. Intenta nuevamente.");
+        });
+    });
+  });
+</script>
+
+
+
+    
+    <section id="contacto">
+    <div class="contenedor7L">
+      <div class="contact-info-text">
+        <h2>Contacto</h2>
+
+        <p><img src="Gmail.png" alt="Gmail" class="Gmail"> <strong>E-Mail:</strong></p>
+        <span class="dato">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ingeddyperezeusebio18@gmail.com&su=Asunto%20del%20correo&body=Hola,%20este%20es%20el%20mensaje." target="_blank">ingeddyperezeusebio18@gmail.com</a>
+        </span>
+
+        <p><img src="Celular.png" alt="Flota" class="Flota"> <strong>Flota:</strong></p>
+        <span class="dato">+1 (829) 521-3800</span>
+
+        <p><img src="Whatsapp.png" alt="Whatsapp" class="Whatsapp"> <strong>Whatsapp:</strong></p>
+        <span class="dato"><a class="link" href="https://wa.me/qr/NABLEUVXTVIUD1" target="_blank" class="links">Link directo</a></span>
+
+        <p><img src="Telefono.png" alt="Telefono" class="Telefono"> <strong>Telefono:</strong></p>
+        <span class="dato">+1 (829) 545-9416 / +1 (809) 332-0306</span>
+      </div>
+
+      <div class="image-section">
+        <img src="Contactogif.gif" alt="Contactogif" class="Contactogif">
+      </div>
+    </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 LandCord - Soft Luxury. Todos los derechos reservados.</p>
+    </footer>
+    <script src="LandCordIntimate.js"></script>
+ </body>
+</html>

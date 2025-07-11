@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Index.css">
+    <title>LandCord Intimate</title>
+    <link rel="icon" href="ventana2.png" type="image/png">
+
+  <meta property="og:title" content="Nombre de tu sitio web" />
+  <meta property="og:description" content="Una breve descripción de tu página." />
+  <meta property="og:image" content="https://tusitio.com/imagen.jpg" />
+  <meta property="og:url" content="https://tusitio.com/" />
+  <meta property="og:type" content="website" />
+
+  </head>
+  <body class="body">
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <header style="position: relative; height: 300px; overflow: hidden;">
+      
+
+    <div class="header-content" style="position: relative; z-index: 2; color: white; padding: 2px;">
+          <img src="LOGO.png" alt="LOGO" class="neon-glow LOGO-img">
+          <br><br>
+          <h1>LANDCORD INTIMATE</h1>
+          <br>
+          <h3 class="subt">SOFT LUXURY</h3>
+        </div>
+    </header>
+
+     
+    <!-- ✅ Este es el lugar correcto para cargar tu JS -->
+
+  <nav class="menus" id="inicio">
+  <a href="index.html" onclick="playSound()">Tienda</a>
+
+  <div class="dropdown">
+    <a href="#sobre-nosotros" onclick="playSound()">Sobre nosotros</a>
+    <div class="dropdown-content">
+      <a href="#historia" onclick="playSound()">Historia</a>
+      <a href="#filosofía" onclick="playSound()">Filosofía</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <a href="#lenceria" onclick="playSound()">Lencería o interiores</a>
+    <div class="dropdown-content">
+      <a href="LenceriaMujer.html" onclick="playSound()">Mujer</a>
+      <a href="InteriorHombres.html" onclick="playSound()">Hombre</a>
+      <a href="InteriorNiña.html" onclick="playSound()">Niña</a>
+      <a href="InteriorNiño.html" onclick="playSound()">Niño</a>
+    </div>
+  </div>
+
+  <a href="#novedades" onclick="playSound()">Novedades</a>
+  <a href="#contacto" onclick="playSound()">Contacto</a>
+</nav>
+
+     
+    <!-- Solo necesitas un audio si todos comparten el mismo sonido -->
+    <audio id="Tecla" src="Tecla.mp3"></audio>
+
+    </head>
+
+    <div class="slider-container">
+      <button class="slider-nav left" onclick="prevSlide()">❮</button>
+          
+          <div class="slides" id="headerSlideContainer">
+            <img src="Portada1.png" alt="Slide 1">
+            <img src="Portada2.png" alt="Slide 2">
+            <img class="slide3" src="Portada3.png" alt="Slide 3">
+          </div>
+          
+      <button class="slider-nav right" onclick="nextSlide()">❯</button>
+    </div>
+  
+
+    <script>
+        (function () {
+    let currentSlide = 0;
+    const slideContainer = document.getElementById("headerSlideContainer");
+    const slides = slideContainer.children;
+    const totalSlides = slides.length;
+
+    function updateSlide() {
+      const slideWidth = slides[0].offsetWidth;
+      slideContainer.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+    }
+
+    window.nextSlide = function () {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      updateSlide();
+    };
+
+    window.prevSlide = function () {
+      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+      updateSlide();
+    };
+
+    // Auto avance cada 4 segundos
+    setInterval(nextSlide, 4000);
+
+    // Ajustar cuando cargue o redimensione
+    window.addEventListener("load", updateSlide);
+    window.addEventListener("resize", updateSlide);
+  })();
+
+    </script>
+     
+    <section id="sobre-nosotros">
+
+      <div class="contenedor1">
+      <h2>Sobre nosotros</h2>
+        <p><strong>LandCord Intimate</strong> se posiciona como una tienda de lencería de alta gama que combina elegancia, calidad y sofisticación en cada uno de sus productos. 
+          Su sitio web refleja una estética refinada, con un diseño limpio, navegación intuitiva y fotografías de alta calidad que resaltan el detalle y la exclusividad 
+          de sus piezas. La presentación transmite profesionalismo y cuidado, logrando una experiencia de compra alineada con los estándares del lujo íntimo. En el aspecto ético,
+          LandCord Intimate destaca por su comunicación clara y responsable. Ofrece descripciones precisas de sus productos, incluyendo materiales, cuidados y opciones de tallas,
+          lo cual demuestra un compromiso con la transparencia y la satisfacción del cliente. Además, mantiene un equilibrio visual entre sensualidad y respeto, evitando 
+          estereotipos dañinos y promoviendo una imagen de empoderamiento femenino. La representación de sus modelos es inclusiva y elegante, reforzando valores de diversidad y 
+          autoestima.
+        </p> 
+      <strong><p class="accordion"><img src="touch.ico" alt="touch" class="touch"> Habilidades y experiencia:</p></strong>   
+      <div class="panel">
+      <ul>
+        <li><strong>Desarrollo web (Front-end):</strong>
+          Sólidos conocimientos en HTML, CSS y JavaScript, aplicados al diseño y desarrollo de sitios web modernos, dinámicos y responsivos. Familiaridad con buenas prácticas de 
+          codificación, estructuración semántica, accesibilidad web (WCAG) y optimización para distintos dispositivos y navegadores.</li>
+      </div>
+
+    </section>
+
+    <section id="historia">
+       <div class="contenedor2">
+         <h2>Historia</h2>
+          <p>En el corazón de Santo Domingo Este, cerca del emblemático Bulevar de Sabana Perdida, nació una idea que cambiaría la percepción del lujo textil en la región: 
+            Land Cord Soft Luxury. Fundada por la diseñadora dominicana Elena Land y el ingeniero de materiales Carlos Cord, la empresa surgió de una visión clara: elevar 
+            la elegancia caribeña a través de tejidos inteligentes, confortables y responsables con el entorno. El entorno urbano y vibrante de Sabana Perdida sirvió de 
+            inspiración y motor para la creatividad de la marca. En sus inicios modestos, Land Cord apostó por materiales de alta calidad y procesos artesanales combinados 
+            con tecnología textil avanzada. Su primera colección —una línea de ropa interior de lujo con fibras suaves, adaptables y con propiedades térmicas— marcó un antes 
+            y un después en el mercado local.</p>
+
+          <p>Gracias al compromiso con la innovación y la ética, la empresa creció rápidamente, expandiéndose a líneas de ropa para el hogar, accesorios y colaboraciones con 
+            diseñadores emergentes. Cada pieza de Land Cord Soft Luxury no solo lleva el sello de la elegancia discreta, sino también el orgullo de haber sido concebida en uno 
+            de los sectores más auténticos y resilientes de Santo Domingo Este. Fiel a sus raíces, la empresa mantiene una fuerte conexión con la comunidad que la vio nacer. 
+            A través de programas de formación en confección textil y diseño, Land Cord brinda oportunidades a jóvenes talentos locales, fomentando el desarrollo social y 
+            profesional en la zona. Hoy en día, Land Cord Soft Luxury es sinónimo de diseño exclusivo, innovación sostenible y compromiso social. Con una proyección 
+            internacional en constante expansión, su esencia sigue firmemente anclada en el espíritu creativo de Sabana Perdida, donde el lujo se teje con esfuerzo, identidad 
+            y visión de futuro.</p>
+       </div>
+     </section>
+
+   <a href="#inicio"  class="boton-link">📍 Inicio</a>
+    <br><br><br><br><br>
+
+    <div class="thumbnail-container">
+    <img src="Historia.jpg" alt="Descripción de la imagen 1" class="thumbnail2" onclick="openModal('educacion1.png')">
+    </div>
+
+    <!-- Modal único para toda la página, definido solo una vez -->
+    <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+    </div>
+
+    <section id="filosofía">
+      <div class="contenedor3">
+      <h2>Filosofía</h2>
+          <p>En Land Cord Soft Luxury, creemos que la verdadera elegancia nace del equilibrio entre la suavidad, la seguridad y el deseo. Nuestra lencería no solo viste el cuerpo, sino que honra la esencia de quien 
+            la lleva. Diseñamos cada prenda como una experiencia sensorial, donde el confort se une con el lujo, y la feminidad se expresa con libertad y orgullo. Inspirados en la belleza atemporal y los detalles 
+            íntimos, trabajamos con materiales nobles y un enfoque ético, para que cada pieza refleje lo que realmente somos: una marca que cuida, eleva y celebra la intimidad.</p>
+      </div>
+    <br><br>
+
+    <div class="thumbnail-container">
+    <img src="Modelo1.jpg" alt="Descripción de la imagen 1" class="thumbnail" onclick="openModal('Modelo1.jpg')">
+    
+    <div class="center-group">
+      <img src="Otros1.jpg" alt="Descripción de la imagen 2" class="thumbnail" onclick="openModal('Modelo2.jpg')">
+      <img src="Otros2.jpg" alt="Descripción de la imagen 4" class="thumbnail below" onclick="openModal('Otros2.jpg')">
+    </div>
+
+    <img src="Modelo4.jpg" alt="Descripción de la imagen 3" class="thumbnail" onclick="openModal('Modelo4.jpg')">
+    </div>
+
+    </section>
+
+    <style>
+  .contenedor4 {
+    position: relative;
+    overflow: hidden;
+    width: fit-content;
+    margin: auto;
+  }
+
+  .slider-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .slider-track img {
+    flex-shrink: 0;
+    max-width: 100%;
+    height: 580px;
+    width: 500px;
+    margin-right: 35px; /* 👉 Espacio entre imágenes */
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 18px;
+    z-index: 10;
+    border: none;
+  }
+
+  .prev {
+    left: -100px;
+  }
+
+  .next {
+    right: -100px;
+  }
+</style>
+</head>
+<body>
+
+<section id="novedades">
+  <div class="contenedor4" id="slider">
+    <h2>Novedades</h2>
+    <div class="slider-track" id="sliderTrack">
+      <img src="NovedadesOF.jpg" alt="NovedadesOF">
+      <img src="NovedadesOF2.jpg" alt="NovedadesOF2">
+      <img src="NovedadesOF3.jpg" alt="NovedadesOF3">
+    </div>
+    <button class="prev" onclick="moveSlide(-1)">&#10094; Anterior</button>
+    <button class="next" onclick="moveSlide(1)">Siguiente &#10095;</button>
+  </div>
+</section>
+
+<script>
+  const sliderTrack = document.getElementById('sliderTrack');
+  const slides = sliderTrack.querySelectorAll('img');
+  let currentIndex = 0;
+
+  function updateSlider() {
+    const slideWidth = slides[0].offsetWidth + parseInt(getComputedStyle(slides[0]).marginRight);
+    sliderTrack.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+  }
+
+  function moveSlide(n) {
+    currentIndex = (currentIndex + n + slides.length) % slides.length;
+    updateSlider();
+  }
+
+  setInterval(() => moveSlide(1), 3000);
+  window.addEventListener('load', updateSlider);
+  window.addEventListener('resize', updateSlider);
+</script>
+
+    
+    <br>
+
+    <section id="contacto">
+    <div class="contenedor7L">
+      <div class="contact-info-text">
+        <h2>Contacto</h2>
+
+        <p><img src="Gmail.png" alt="Gmail" class="Gmail"> <strong>E-Mail:</strong></p>
+        <span class="dato">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ingeddyperezeusebio18@gmail.com&su=Asunto%20del%20correo&body=Hola,%20este%20es%20el%20mensaje." target="_blank">ingeddyperezeusebio18@gmail.com</a>
+        </span>
+
+        <p><img src="Celular.png" alt="Flota" class="Flota"> <strong>Flota:</strong></p>
+        <span class="dato">+1 (829) 521-3800</span>
+
+        <p><img src="Whatsapp.png" alt="Whatsapp" class="Whatsapp"> <strong>Whatsapp:</strong></p>
+        <span class="dato"><a class="link" href="https://wa.me/qr/NABLEUVXTVIUD1" target="_blank" class="links">Link directo</a></span>
+
+        <p><img src="Telefono.png" alt="Telefono" class="Telefono"> <strong>Telefono:</strong></p>
+        <span class="dato">+1 (829) 545-9416 / +1 (809) 332-0306</span>
+      </div>
+
+      <div class="image-section">
+        <img src="Contactogif.gif" alt="Contactogif" class="Contactogif">
+      </div>
+    </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 LandCord - Soft Luxury. Todos los derechos reservados.</p>
+    </footer>
+    <script src="LandCordIntimate.js"></script>
+ </body>
+</html>
