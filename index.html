@@ -56,6 +56,19 @@
   <a href="#contacto" onclick="playSound()">Contacto</a>
 </nav>
 
+<script>
+  function playSound() {
+    const audio = document.getElementById("Tecla");
+    if (audio) {
+      audio.currentTime = 0; // Reinicia el audio si ya se está reproduciendo
+      audio.play().catch(e => {
+        // Si el navegador bloquea el audio (por no haber interacción previa), puedes manejarlo aquí
+        console.warn("Audio no se pudo reproducir:", e);
+      });
+    }
+  }
+</script>
+
      
     <!-- Solo necesitas un audio si todos comparten el mismo sonido -->
     <audio id="Tecla" src="Tecla.mp3"></audio>
@@ -226,6 +239,17 @@
   .next {
     right: -100px;
   }
+
+  @media screen and (max-width: 768px) {
+
+      .prev {
+    left: 40px;
+  }
+
+  .next {
+    right: 115px;
+  }
+    }
 </style>
 </head>
 <body>
