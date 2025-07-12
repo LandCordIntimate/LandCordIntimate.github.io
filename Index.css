@@ -1546,8 +1546,8 @@ header h1, header h3 {
 
 @media screen and (max-width: 600px) {
   .boton-link {
-    bottom: 15px;
-    right: 105px;
+    bottom: 80px;
+    right: 235px;
     padding: 10px 16px;
     font-size: 14px;
   }
