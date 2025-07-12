@@ -30,7 +30,7 @@ h2 {
       bottom: 20px;
       right: 20px;
       z-index: 9999;
-      background: linear-gradient(to bottom, #ffffff, #d400ff, #fa2bd7);
+      background: linear-gradient(to bottom, #ffffff, #000000, #504f50);
       color: white;
       border: none;
       padding: 14px 20px;
@@ -41,7 +41,7 @@ h2 {
   }
 
   .boton-link:hover {
-  background: linear-gradient(to top, #ff9e91, #e0e0e0);
+  background: linear-gradient(to top, #ffffffb2, #000000);
   color: rgb(0, 0, 0); 
   box-shadow: 0 2px 0 #e0ff55, 0 6px 10px rgba(0, 0, 0, 0.3);
   transform: translateY(-2px);
@@ -53,7 +53,7 @@ h2 {
 }
 
 h1 {
-  color: #050505; 
+  color: #ffffff; 
   font-size: 3em;
   text-align: center; 
   font-weight: bold; 
@@ -66,12 +66,12 @@ h1 {
     3px 3px 0px rgba(0, 0, 0, 0.5),
     4px 4px 0px rgba(0, 0, 0, 0.4),
     5px 5px 0px rgba(0, 0, 0, 0.3),
-    0 0 10px #fff8e1,
-    0 0 20px #ffd700,
-    0 0 30px #f9c80e,
-    0 0 40px #f9c80e,
-    0 0 50px #ffd700,
-    0 0 60px #fff8e1;
+    0 0 10px #000000,
+    0 0 20px #000000,
+    0 0 30px #000000,
+    0 0 40px #000000,
+    0 0 50px #000000,
+    0 0 60px #000000;
 
   animation: neonPulse 3s ease-in-out infinite;
 }
@@ -84,12 +84,12 @@ h1 {
       3px 3px 0px rgba(0, 0, 0, 0.5),
       4px 4px 0px rgba(0, 0, 0, 0.4),
       5px 5px 0px rgba(0, 0, 0, 0.3),
-      0 0 10px #fff8e1,
-      0 0 20px #ffd700,
-      0 0 30px #f9c80e,
-      0 0 40px #f9c80e,
-      0 0 50px #ffd700,
-      0 0 60px #fff8e1;
+      0 0 10px #000000,
+      0 0 20px #000000,
+      0 0 30px #292929,
+      0 0 40px #000000,
+      0 0 50px #292929,
+      0 0 60px #000000;
   }
 
   50% {
@@ -99,12 +99,12 @@ h1 {
       3px 3px 0px rgba(0, 0, 0, 0.5),
       4px 4px 0px rgba(0, 0, 0, 0.4),
       5px 5px 0px rgba(0, 0, 0, 0.3),
-      0 0 4px #fff8e1,
-      0 0 10px #ffd700,
-      0 0 15px #f9c80e,
-      0 0 20px #f9c80e,
-      0 0 25px #ffd700,
-      0 0 30px #fff8e1;
+      0 0 4px #a8a8a8,
+      0 0 10px #a8a8a8,
+      0 0 15px #a8a8a8,
+      0 0 20px #a8a8a8,
+      0 0 25px #a8a8a8,
+      0 0 30px #a8a8a8;
   }
 }
 
@@ -120,8 +120,8 @@ p {
 h3 {
   display: inline-block; /* Para que se alineen en línea */
   margin: 0 10px; /* Espacio entre los h3 */
-  text-shadow: hsl(305, 100%, 55%) 2px 2px 4px;
-  color: #080808;
+  text-shadow: hsl(0, 0%, 0%) 5px 5px 10px;
+  color: #000000;
   font-size: 25px;
 }
 
@@ -262,9 +262,9 @@ nav a:active {
 
 /* ✅ Efecto neón azul al pasar el mouse */
 .contenedor1:hover {
-  box-shadow: 0 0 15px #e680ff,
-              0 0 30px #e680ff,
-              0 0 60px #e680ff;
+  box-shadow: 0 0 15px #fdfdfd,
+              0 0 30px #fdfdfd,
+              0 0 60px #5c5c5c;
   transform: scale(1.02);
 }
 
@@ -302,9 +302,9 @@ nav a:active {
 }
 
 .contenedor2:hover {
-  box-shadow: 0 0 15px #e680ff,
-              0 0 30px #e680ff,
-              0 0 60px #e680ff;
+  box-shadow: 0 0 15px #fdfdfd,
+              0 0 30px #fdfdfd,
+              0 0 60px #5c5c5c;
   transform: scale(1.02);
 }
 /*division de container*/
@@ -339,9 +339,9 @@ nav a:active {
 }
 
 .contenedor3:hover {
-  box-shadow: 0 0 15px #e680ff,
-              0 0 30px #e680ff,
-              0 0 60px #e680ff;
+  box-shadow: 0 0 15px #fdfdfd,
+              0 0 30px #fdfdfd,
+              0 0 60px #5c5c5c;
   transform: scale(1.02);
 }
 
@@ -376,9 +376,9 @@ nav a:active {
 }
 
 .contenedor4:hover {
-  box-shadow: 0 0 15px #e680ff,
-              0 0 30px #e680ff,
-              0 0 60px #e680ff;
+  box-shadow: 0 0 15px #fdfdfd,
+              0 0 30px #fdfdfd,
+              0 0 60px #5c5c5c;
   transform: scale(1.02);
 }
 
@@ -413,9 +413,9 @@ nav a:active {
 }
 
 .contenedor5:hover {
-  box-shadow: 0 0 15px #e680ff,
-              0 0 30px #e680ff,
-              0 0 60px #e680ff;
+  box-shadow: 0 0 15px #fdfdfd,
+              0 0 30px #fdfdfd,
+              0 0 60px #5c5c5c;
   transform: scale(1.02);
 }
 
@@ -557,9 +557,9 @@ nav a:active {
 }
 
 .contenedor6:hover {
-  box-shadow: 0 0 15px #e680ff,
-              0 0 30px #e680ff,
-              0 0 60px #e680ff;
+  box-shadow: 0 0 15px #fdfdfd,
+              0 0 30px #fdfdfd,
+              0 0 60px #5c5c5c;
   transform: scale(1.02);
 }
 
@@ -599,9 +599,9 @@ nav a:active {
 }
 
 .contenedor7:hover {
-  box-shadow: 0 0 15px #e680ff,
-              0 0 30px #e680ff,
-              0 0 60px #e680ff;
+  box-shadow: 0 0 15px #fdfdfd,
+              0 0 30px #fdfdfd,
+              0 0 60px #5c5c5c;
   transform: scale(1.02);
 }
 
@@ -623,9 +623,9 @@ nav a:active {
 }
 
 .contenedor7L:hover {
-  box-shadow: 0 0 15px #e680ff,
-              0 0 30px #e680ff,
-              0 0 60px #e680ff;
+  box-shadow: 0 0 15px #fdfdfd,
+              0 0 30px #fdfdfd,
+              0 0 60px #5c5c5c;
   transform: scale(1.02);
 }
 
@@ -725,7 +725,7 @@ nav a:active {
   text-decoration: none;
   color: #000;
   background: linear-gradient(135deg, #fff8e1 0%, #ffd700 30%, #fff 50%, #ffd700 70%, #fff8e1 100%);
-  border: 2px solid #ff6565;
+  border: linear-gradient(135deg, #fff8e1 0%, #ffd700 30%, #fff 50%, #ffd700 70%, #fff8e1 100%);
   border-radius: 8px;
   box-shadow: 0 4px 0 #000000;
   transition: all 0.2s ease-in-out;
@@ -733,9 +733,9 @@ nav a:active {
 }
 
 .menus a:hover {
-  background: linear-gradient(to top, #688ff8, #e0e0e0);
+  background: linear-gradient(to top, #ffffffb2, #000000);
   color: white; 
-  box-shadow: 0 2px 0 #0004ffa1, 0 6px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 0 #ffaeaea1, 0 6px 10px rgba(0, 0, 0, 0.3);
   transform: translateY(-2px);
 }
 
@@ -767,7 +767,7 @@ nav a:active {
   text-decoration: none;
   color: #000;
   font-size: 18px;
-  background: linear-gradient(to top, #ffffff, #ffb3f0);
+  background: linear-gradient(135deg, #fff8e1 0%, #ffd700 30%, #fff 50%, #ffd700 70%, #fff8e1 100%);
   margin: 5px;
   border-radius: 6px;
   border: 1px solid #ff65cd;
@@ -778,7 +778,7 @@ nav a:active {
 }
 
 .dropdown-content a:hover {
-  background: linear-gradient(to top, #688ff8, #e0e0e0);
+  background: linear-gradient(to top, #ffffffb2, #000000);
   color: white;
 }
 
@@ -826,9 +826,9 @@ a link:active {
 
 /* 🔵 Efecto neón rosa al hacer hover */
 .form-container:hover {
-  box-shadow: 0 0 15px #e680ff,
-              0 0 30px #e680ff,
-              0 0 60px #e680ff;
+  box-shadow: 0 0 15px #fdfdfd,
+              0 0 30px #fdfdfd,
+              0 0 60px #5c5c5c;
   transform: scale(1.02);
 }
 
@@ -856,10 +856,10 @@ input::placeholder, textarea::placeholder {
 
 button {
   color: rgb(255, 255, 255);
-  background: linear-gradient(to bottom, #ffffff, #00eeffbb, #00000071);
+  background: linear-gradient(to bottom, #ffffff6b, #ffffff33, #00000071);
   text-decoration: none;
   text-shadow: #000;
-  border: none;
+  border-radius: 100%;
   margin: 0 150px;
   padding: 12px;
   max-width: 250px;
@@ -962,7 +962,8 @@ button:hover {
 @media screen and (max-width: 992px) {
   .contenedor2,
   .contenedor3,
-  .contenedor7 {
+  .contenedor7, 
+  .contenedor7L{
     float: none;
     margin-left: auto;
     margin-right: auto;
@@ -1063,7 +1064,8 @@ button:hover {
   .contenedor4,
   .contenedor5,
   .contenedor6,
-  .contenedor7 {
+  .contenedor7, 
+  .contenedor7L{
     padding: 20px;
     width: 95%;
     margin: 30px auto;
@@ -1147,89 +1149,95 @@ header h1, header h3 {
 
 body { font-family: sans-serif; margin: 0; background: #000000; color: #ffffff; }
 
+/* Imágenes en vista de escritorio */
 .slider-container {
   position: relative;
   width: 100%;
-  height: 600px;
   overflow: hidden;
-  margin-top: 20px;
-}
-
-.slides {
-  display: flex;
-  width: 300%; /* Ajusta según la cantidad de imágenes */
-  height: 100%;
-  transition: transform 0.5s ease-in-out;
 }
 
 .slides img {
-  flex-shrink: 0;
-  width: 100vw;
-  height: 100%;
-  object-fit: cover;
+  width: 100%;
+  display: block;
 }
 
-/* Botones de navegación (izquierda y derecha) */
 .slider-nav {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(145, 145, 145, 0.555);
+  background-color: rgba(0, 0, 0, 0.4); /* semi transparente */
+  color: white;
   border: none;
-  font-size: 2rem;
   padding: 10px 15px;
+  font-size: 30px;
   cursor: pointer;
   z-index: 10;
-  border-radius: 50%;
-  transition: background 0.3s;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 .slider-nav:hover {
-  background: rgba(71, 71, 71, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .slider-nav.left {
   left: 10px;
+  border-radius: 100%;
 }
 
 .slider-nav.right {
   right: 10px;
+  border-radius: 100%;
 }
 
-.nav {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.nav button {
-  padding: 10px 20px;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-.slider {
-  width: 350px;
-  overflow: hidden;
-  padding-right: 340px;
-  margin-top: 3%;
-  border-radius: 10%;
-}
-
-.slides {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  width: 1050px; 
-}
 
 .slides img {
-  width: 350px;
-  height: auto;
+  flex-shrink: 0;
+  width: 1361px;
+  height: 100%;
+  object-fit: cover;
 }
 
-.nav {
-  text-align: center;
-  margin-top: 10px;
+/* Responsive para tablets y móviles */
+@media screen and (max-width: 768px) {
+  .slider-container {
+    height: auto;
+    aspect-ratio: 1361 / 1200;  /* Mantiene la proporción */
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .slides {
+    gap: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .slides img {
+    width: 100% !important;     /* Fuerza a ignorar el 1361px */
+    height: auto !important;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  .slider-nav.left {
+  left: 10px;
+  border-radius: 100%;
 }
+
+.slider-nav.right {
+  right: 50px;
+  border-radius: 100%;
+}
+
+}
+
+
+
+
+
 
 /*IMAGENES DE EDUCACION*/
 
@@ -1534,4 +1542,23 @@ header h1, header h3 {
   top: 0; left: 0; right: 0; bottom: 0;
   background-color: rgba(0,0,0,0.5);
   z-index: 999;
+}
+
+@media screen and (max-width: 600px) {
+  .boton-link {
+    bottom: 15px;
+    right: 105px;
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+}
+
+/* ✅ Responsive para pantallas muy pequeñas (ej. teléfonos en modo vertical) */
+@media screen and (max-width: 400px) {
+  .boton-link {
+    padding: 8px 12px;
+    font-size: 13px;
+    bottom: 10px;
+    right: 10px;
+  }
 }
